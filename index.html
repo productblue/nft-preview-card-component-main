@@ -51,12 +51,23 @@
     .image1{
       width: 100%;
       border-radius: 15px;
+      transition: opacity 0.5s ease;
     }
 
-    .image1:hover{
+    .card__cont {
+      max-height: 325px;
+    }
+    
+    .card__cont:hover {
+      background: url("./images/icon-view.svg") no-repeat;
+      background-position: center center;
+      background-color: hsl(178, 100%, 50%, .5);
+      border-radius: 15px;
+    }
+
+    .image1:hover {
       cursor: pointer;
-      background-image: url("images/icon-view.svg") no-repeat;
-      
+      opacity: 0.5;
     }
 
     h2{
@@ -144,7 +155,9 @@
   <main class="container">
     <div class="card">
 
-      <img class="image1" src="images\image-equilibrium.jpg" alt="Equilibrium">
+      <div class="card__cont" style="">
+        <img class="image1" src="images\image-equilibrium.jpg" alt="Equilibrium">
+      </div>
 
       <h2 class="header">
       Equilibrium #3429
